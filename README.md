@@ -7,7 +7,7 @@
 An extension that let's you manipulate an object with a closure
 
 ### How does it work:
-See example
+See [Example](https://github.com/eonist/With#example) 
 
 ### How can I get it:
 - Carthage: `github "eonist/With" "master"`
