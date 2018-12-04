@@ -37,6 +37,15 @@ with(size) {
   $0.height = 50
 }
 Swift.print(size)//100,50
+
+//EXAMPLE 4:
+func createImageView() -> UIImageView{
+   return with(.init()){
+      $0.image = UIImage(named:"someGraphic")
+      self.addSubview($0)
+   }
+}
+createImage()//Adds image to view
 ```
 
 ### Credit:
