@@ -1,6 +1,4 @@
 import Foundation
-
-@discardableResult/*👈 Avoids xcode compiler warnings if result is not used*/
 /**
  * EXAMPLE 1:
  * let rectangle = with(CGRect.init(x: 0, y: 0, width: 100, height: 100)) {
@@ -14,6 +12,7 @@ import Foundation
  * }
  * Swift.print(color.cgColor.alpha)//0.2
  */
+@discardableResult/*👈 Avoids xcode compiler warnings if result is not used*/
 public func with<T>(_ item: T, update: (inout T) throws -> Void) rethrows -> T {
    var item = item
    try update(&item)

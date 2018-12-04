@@ -25,10 +25,18 @@ let rectangle = with(CGRect.init(x: 0, y: 0, width: 100, height: 100)) {
 Swift.print(rectangle)// X:30.0, y:30.0, width:80.0, height:80.0
 
 //EXAMPLE 2:
-let color = with(UIColor.init(red: 50, green: 100, blue: 0, alpha: 0.9)) { ( col:inout UIColor) -> Void  in
+let color:UIColor = with(.init(red: 50, green: 100, blue: 0, alpha: 0.9)) { ( col:inout UIColor) -> Void  in
   col = col.withAlphaComponent(0.2)
 }
 Swift.print(color.cgColor.alpha)//0.2
+
+//EXAMPLE 3:
+var size:CGSize = CGSize(width:50,height:40)
+with(size) {
+  $0.width = 100
+  $0.height = 50
+}
+Swift.print(size)//100,50
 ```
 
 ### Credit:
