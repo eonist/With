@@ -11,23 +11,7 @@
 		6533531721B671E80056BB34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533531621B671E80056BB34 /* ViewController.swift */; };
 		6533531C21B671E90056BB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6533531B21B671E90056BB34 /* Assets.xcassets */; };
 		6533531F21B671E90056BB34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6533531D21B671E90056BB34 /* LaunchScreen.storyboard */; };
-		6533532F21B6723B0056BB34 /* With.h in Headers */ = {isa = PBXBuildFile; fileRef = 6533532D21B6723B0056BB34 /* With.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6533533221B6723B0056BB34 /* With.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6533532B21B6723B0056BB34 /* With.framework */; };
-		6533533321B6723B0056BB34 /* With.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6533532B21B6723B0056BB34 /* With.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6533533921B6724B0056BB34 /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533533821B6724B0056BB34 /* With.swift */; };
-		F16213EA21FB6238005297DE /* With_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = F16213E821FB6238005297DE /* With_mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F16213EF21FB6249005297DE /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533533821B6724B0056BB34 /* With.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6533533021B6723B0056BB34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6533530921B671E80056BB34 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6533532A21B6723B0056BB34;
-			remoteInfo = With;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6533533721B6723B0056BB34 /* Embed Frameworks */ = {
@@ -36,7 +20,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6533533321B6723B0056BB34 /* With.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,32 +33,11 @@
 		6533531B21B671E90056BB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6533531E21B671E90056BB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6533532021B671E90056BB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6533532B21B6723B0056BB34 /* With.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = With.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6533532D21B6723B0056BB34 /* With.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = With.h; sourceTree = "<group>"; };
-		6533532E21B6723B0056BB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6533533821B6724B0056BB34 /* With.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = With.swift; sourceTree = "<group>"; };
-		F16213E621FB6238005297DE /* With_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = With_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F16213E821FB6238005297DE /* With_mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = With_mac.h; sourceTree = "<group>"; };
-		F16213E921FB6238005297DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6533530E21B671E80056BB34 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6533533221B6723B0056BB34 /* With.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6533532821B6723B0056BB34 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F16213E321FB6238005297DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -88,10 +50,8 @@
 		6533530821B671E80056BB34 = {
 			isa = PBXGroup;
 			children = (
-				F16213EE21FB623F005297DE /* src */,
+				F1419EBB238EA6F8001DEE06 /* Sources */,
 				6533531321B671E80056BB34 /* WithExample */,
-				6533532C21B6723B0056BB34 /* With */,
-				F16213E721FB6238005297DE /* With mac */,
 				6533531221B671E80056BB34 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,8 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				6533531121B671E80056BB34 /* WithExample.app */,
-				6533532B21B6723B0056BB34 /* With.framework */,
-				F16213E621FB6238005297DE /* With_mac.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,52 +76,23 @@
 			path = WithExample;
 			sourceTree = "<group>";
 		};
-		6533532C21B6723B0056BB34 /* With */ = {
+		F1419EBB238EA6F8001DEE06 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				6533532D21B6723B0056BB34 /* With.h */,
-				6533532E21B6723B0056BB34 /* Info.plist */,
+				F1419EBC238EA6F8001DEE06 /* With */,
 			);
-			path = With;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		F16213E721FB6238005297DE /* With mac */ = {
-			isa = PBXGroup;
-			children = (
-				F16213E821FB6238005297DE /* With_mac.h */,
-				F16213E921FB6238005297DE /* Info.plist */,
-			);
-			path = "With mac";
-			sourceTree = "<group>";
-		};
-		F16213EE21FB623F005297DE /* src */ = {
+		F1419EBC238EA6F8001DEE06 /* With */ = {
 			isa = PBXGroup;
 			children = (
 				6533533821B6724B0056BB34 /* With.swift */,
 			);
-			path = src;
+			path = With;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		6533532621B6723B0056BB34 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6533532F21B6723B0056BB34 /* With.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F16213E121FB6238005297DE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F16213EA21FB6238005297DE /* With_mac.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		6533531021B671E80056BB34 /* WithExample */ = {
@@ -179,50 +108,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				6533533121B6723B0056BB34 /* PBXTargetDependency */,
 			);
 			name = WithExample;
 			productName = WithExample;
 			productReference = 6533531121B671E80056BB34 /* WithExample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		6533532A21B6723B0056BB34 /* With */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6533533421B6723B0056BB34 /* Build configuration list for PBXNativeTarget "With" */;
-			buildPhases = (
-				6533532621B6723B0056BB34 /* Headers */,
-				6533532721B6723B0056BB34 /* Sources */,
-				6533532821B6723B0056BB34 /* Frameworks */,
-				6533532921B6723B0056BB34 /* Resources */,
-				F1CE26692281DC1A00441836 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = With;
-			productName = With;
-			productReference = 6533532B21B6723B0056BB34 /* With.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F16213E521FB6238005297DE /* With mac */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F16213ED21FB6238005297DE /* Build configuration list for PBXNativeTarget "With mac" */;
-			buildPhases = (
-				F16213E121FB6238005297DE /* Headers */,
-				F16213E221FB6238005297DE /* Sources */,
-				F16213E321FB6238005297DE /* Frameworks */,
-				F16213E421FB6238005297DE /* Resources */,
-				F1CE266A2281DC2300441836 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "With mac";
-			productName = "With mac";
-			productReference = F16213E621FB6238005297DE /* With_mac.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -235,13 +125,6 @@
 				ORGANIZATIONNAME = FutureLab;
 				TargetAttributes = {
 					6533531021B671E80056BB34 = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					6533532A21B6723B0056BB34 = {
-						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
-					};
-					F16213E521FB6238005297DE = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -260,8 +143,6 @@
 			projectRoot = "";
 			targets = (
 				6533531021B671E80056BB34 /* WithExample */,
-				6533532A21B6723B0056BB34 /* With */,
-				F16213E521FB6238005297DE /* With mac */,
 			);
 		};
 /* End PBXProject section */
@@ -276,58 +157,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6533532921B6723B0056BB34 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F16213E421FB6238005297DE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		F1CE26682281DC1200441836 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		F1CE26692281DC1A00441836 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		F1CE266A2281DC2300441836 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -356,31 +189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6533532721B6723B0056BB34 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6533533921B6724B0056BB34 /* With.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F16213E221FB6238005297DE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F16213EF21FB6249005297DE /* With.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6533533121B6723B0056BB34 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6533532A21B6723B0056BB34 /* With */;
-			targetProxy = 6533533021B6723B0056BB34 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6533531D21B671E90056BB34 /* LaunchScreen.storyboard */ = {
@@ -548,127 +357,6 @@
 			};
 			name = Release;
 		};
-		6533533521B6723B0056BB34 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = With/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = futurelab.github.io.With;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6533533621B6723B0056BB34 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = With/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = futurelab.github.io.With;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F16213EB21FB6238005297DE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "With mac/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.futurelab.With-mac";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F16213EC21FB6238005297DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "With mac/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.futurelab.With-mac";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -686,24 +374,6 @@
 			buildConfigurations = (
 				6533532421B671E90056BB34 /* Debug */,
 				6533532521B671E90056BB34 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6533533421B6723B0056BB34 /* Build configuration list for PBXNativeTarget "With" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6533533521B6723B0056BB34 /* Debug */,
-				6533533621B6723B0056BB34 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F16213ED21FB6238005297DE /* Build configuration list for PBXNativeTarget "With mac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F16213EB21FB6238005297DE /* Debug */,
-				F16213EC21FB6238005297DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
