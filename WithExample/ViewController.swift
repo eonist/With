@@ -1,5 +1,4 @@
 import UIKit
-import With
 
 class ViewController: UIViewController {
    override func viewDidLoad() {
@@ -24,3 +23,17 @@ class ViewController: UIViewController {
       Swift.print(size)//100,50
    }
 }
+extension ViewController {
+   /**
+    *
+    */
+   func test() {
+      let label = UILabel()
+         .with(\.textColor, setTo: .red)
+         .with(\.text, setTo: "Foo")
+         .with(\.textAlignment, setTo: .right)
+         .with(\.layer.cornerRadius, setTo: 5)
+      view.addSubview(label)
+   }
+}
+extension UIView: With {}
