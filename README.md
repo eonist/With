@@ -17,20 +17,20 @@ See [Example](https://github.com/eonist/With#example)
 ### Example:
 
 ```swift
-//EXAMPLE 1:
+// EXAMPLE 1:
 let rectangle: CGRect = with(.init(x: 0, y: 0, width: 100, height: 100)) {
   $0 = $0.offsetBy(dx: 20, dy: 20)
   $0 = $0.insetBy(dx: 10, dy: 10)
 }
 Swift.print(rectangle) // X:30.0, y:30.0, width:80.0, height:80.0
 
-//EXAMPLE 2:
+// EXAMPLE 2:
 let color: UIColor = with(.init(red: 50, green: 100, blue: 0, alpha: 0.9)) { ( col:inout UIColor) -> Void  in
   col = col.withAlphaComponent(0.2)
 }
 Swift.print(color.cgColor.alpha) // 0.2
 
-//EXAMPLE 3:
+// EXAMPLE 3:
 var size:CGSize = CGSize(width: 50, height: 40)
 with(size) {
   $0.width = 100
@@ -38,7 +38,7 @@ with(size) {
 }
 Swift.print(size)//100, 50
 
-//EXAMPLE 4:
+// EXAMPLE 4:
 func createImageView() -> UIImageView{
    return with(.init()){
       $0.image = UIImage(named:"someGraphic")
