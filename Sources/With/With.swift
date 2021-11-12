@@ -15,7 +15,7 @@ import Foundation
  * }
  * Swift.print(color.cgColor.alpha) // 0.2
  */
-public func with<T>(_ item: T, update: (inout T) throws -> Void) rethrows -> T {
+public func with<T>(_ item: T, update: /*@escaping */(inout T) throws -> Void) rethrows -> T {
    var item = item
    try update(&item)
    return item
