@@ -1,8 +1,8 @@
 import Foundation
 /**
  * Works on an object or value type subject, returning an aribitrary object/value from the closure
- * - Note: The subject is still mutated
- * - Note: SubjectT form that can return an arbitrary value from the closure (instead of the value passed in):
+ * - Remark: The subject is still mutated
+ * - Remark: SubjectT form that can return an arbitrary value from the closure (instead of the value passed in):
  * - Returns: MARK: Returning Arbitrary Value
  * let dateString = withMap(DateFormatter()) {
  *    // initializes a `DateFormatter`, configures it, and uses it to calculate a
