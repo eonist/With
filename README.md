@@ -1,7 +1,7 @@
 # With 💗
 ![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg) ![platform](https://img.shields.io/badge/Platform-iOS-blue.svg) ![Lang](https://img.shields.io/badge/Language-Swift%205.0-orange.svg)
 [![SPM compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift)
-[![codebeat badge](https://codebeat.co/badges/51c98d04-a860-42ff-ba93-dd89184ec302)](https://codebeat.co/projects/github-com-eonist-with-master)
+[![codebeat badge](https://codebeat.co/badges/a8f6fe0d-17b0-4d17-a781-c6d5b8930b2a)](https://codebeat.co/projects/github-com-eonist-with-master)
 [![Github actions badge](https://badgen.net/github/checks/eonist/With?icon=github&label=Tests)](https://github.com/eonist/With/actions)
 
 ### What is it
