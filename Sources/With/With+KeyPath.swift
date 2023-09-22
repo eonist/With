@@ -1,12 +1,19 @@
 import Foundation
-
-protocol With {}
 /**
- * Allows the developer to clearly separate the code that initializes a value from the code that uses it, without the burden of defining a factory method.
- * - Remark: We can extend AnyObject, but then the old with doesn't work
- * - Remark: Remeber to extend the type you want to use with on: extension UIView: With {}
- * - Note: Ref: https://github.com/vincent-pradeilles/swift-tips#implementing-the-builder-pattern-with-keypaths
- * ## Examples:
+ * A protocol that allows the `with` extension to be used on any `AnyObject`.
+ */
+protocol With {}
+
+/**
+ * An extension that allows for concise initialization and modification of properties on an `AnyObject`.
+ * - Remark: This extension separates the code that initializes a value from the code that uses it, without the burden of defining a factory method.
+ * - Note: This extension uses key paths to set the value of the specified property.
+ * - Parameters:
+ *   - property: The key path of the property to set.
+ *   - value: The value to set the property to.
+ * - Returns: The modified `AnyObject`.
+ *
+ * Example usage:
  * let label = UILabel()
  *    .with(\.textColor, setTo: .red)
  *    .with(\.text, setTo: "Foo")

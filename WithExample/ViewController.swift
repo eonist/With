@@ -29,10 +29,10 @@ extension ViewController {
     */
    func test() {
       let label = UILabel()
-         .with(\.textColor, setTo: .red)
-         .with(\.text, setTo: "Foo")
-         .with(\.textAlignment, setTo: .right)
-         .with(\.layer.cornerRadius, setTo: 5)
+         .with(\.textColor, setTo: .red) // Set the text color of the label to red
+         .with(\.text, setTo: "Foo") // Set the text of the label to "Foo"
+         .with(\.textAlignment, setTo: .right) // Set the text alignment of the label to right
+         .with(\.layer.cornerRadius, setTo: 5) // Set the corner radius of the label's layer to 5
       view.addSubview(label)
    }
 }

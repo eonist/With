@@ -7,12 +7,15 @@
 ### What is it
 An extension that let's you manipulate an object with a closure
 
+### Description: 
+With is a Swift extension that lets you manipulate an object with a closure. It provides a concise and expressive way to modify an object's properties without having to create temporary variables or write boilerplate code.
+
 ### How does it work
+With works by taking an object and a closure as input. The closure takes an inout reference to the object, allowing you to modify its properties directly. The modified object is then returned by the with function.
 See [Example](https://github.com/eonist/With#example)
 
 ### How can I get it
-- SPM: `"https://github.com/eonist/With.git"` branch: `"master"`
-- Manual installation: Open `.xcodeproj`
+You can add With to your project using Swift Package Manager by adding the following line to your Package.swift file: `.package(url: "https://github.com/eonist/With.git", branch: `"master")`
 
 ### Example:
 

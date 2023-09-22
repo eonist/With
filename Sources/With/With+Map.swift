@@ -1,18 +1,20 @@
-import Foundation
 /**
- * Works on an object or value type subject, returning an aribitrary object/value from the closure
- * - Remark: The subject is still mutated
- * - Remark: SubjectT form that can return an arbitrary value from the closure (instead of the value passed in):
- * - Returns: MARK: Returning Arbitrary Value
+ * Applies a closure to a variable and returns an arbitrary object/value from the closure.
+ * This function is useful for initializing and configuring an object, and then returning a specific value from it.
+ * - Parameters:
+ *   - subject: The variable to apply the closure to.
+ *   - transform: The closure that initializes and configures the object, and returns the desired value.
+ * - Returns: The desired value returned from the closure.
+ *
+ * Example usage:
  * let dateString = withMap(DateFormatter()) {
- *    // initializes a `DateFormatter`, configures it, and uses it to calculate a
- *    // `String` which is the only thing we want to hang onto
- *    $0.dateStyle = .medium
- *    $0.timeStyle = .none
- *    $0.locale = Locale(identifier: "en_US")
- *    let currentDate = Date()
- *    return $0.string(from: currentDate)
+ *     $0.dateStyle = .medium
+ *     $0.timeStyle = .none
+ *     $0.locale = Locale(identifier: "en_US")
+ *     let currentDate = Date()
+ *     return $0.string(from: currentDate)
  * }
+ * Swift.print(dateString) // Prints something like "Jan 1, 2022"
  */
 @inlinable
 public func withMap<SubjectT, ReturnT>(_ subject: SubjectT, _ transform: (inout SubjectT) throws -> ReturnT) rethrows -> ReturnT {
