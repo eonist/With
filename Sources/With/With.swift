@@ -13,6 +13,7 @@
  * }
  * Swift.print(rectangle) // Prints "X:30.0, y:30.0, width:80.0, height:80.0"
  */
+@discardableResult // Avoids xcode compiler warnings if result is not used
 public func with<T>(_ item: T, update: (inout T) throws -> Void) rethrows -> T {
    var item = item
    try update(&item)
