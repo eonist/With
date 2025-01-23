@@ -27,3 +27,6 @@ extension With where Self: AnyObject {
       return self
    }
 }
+
+// Make all NSObject subclasses conform to With
+// extension NSObject: With {}

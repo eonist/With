@@ -51,6 +51,29 @@ func createImageView() -> UIImageView {
 createImage() // Adds image to view
 ```
 
+**Example for with Using Key Paths:**
+```swift
+// Using with function with key paths to configure a UILabel
+let label = UILabel()
+  .with(\.textColor, setTo: .red)
+  .with(\.text, setTo: "Hello World")
+  .with(\.textAlignment, setTo: .center)
+  .with(\.layer.cornerRadius, setTo: 5)
+```
+
+**Example for withMap:**
+
+```swift
+// Using withMap to configure DateFormatter and get a formatted date string
+let dateString: String = withMap(DateFormatter()) {
+  $0.dateStyle = .medium
+  $0.timeStyle = .none
+  return $0.string(from: Date())
+}
+Swift.print(dateString) // Outputs: Jan 1, 2022
+```
+
+
 ### Credit:
 
 Thanks [https://github.com/sindresorhus](https://github.com/sindresorhus) for teaching me this JavaScript-esque super power 💪
